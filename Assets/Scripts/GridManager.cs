@@ -17,6 +17,7 @@ public class GridManager : MonoBehaviour
     private void OnEnable()
     {
         Actions.OnGameStart += GameStart;
+        Actions.OnUpdateArrowDirection += (ArrowDirection) => Debug.Log("OnUpdateArrowDirection");
     }
 
     private void OnDisable()
